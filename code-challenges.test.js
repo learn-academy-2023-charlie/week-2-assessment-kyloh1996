@@ -91,6 +91,11 @@ describe(`divisibleBy`,  () => {
             }
           };
 
+          //REFACTOR: 
+          // const divisibleBy = (obj) => {
+          //   return obj.answer() ? ${obj.number} is divisible by three : ${obj.number} is not divisible by three;
+          //   };
+
     //    Testing:    
     //    console.log(divisibleBy(object1)) // output: 15 is divisible by three
     //    console.log(divisibleBy(object2)) // output: 0 is divisible by three
@@ -221,7 +226,7 @@ const toCapitolize = (arr) => {
   const firstVowelIndex = (str) => {
     const vowels = ["a", "e", "i", "o", "u"];
     for (let i = 0; i < str.length; i++) {
-      if (vowels.includes(str[i])) {
+      if (vowels.includes(str[i])) { // you can add .toLowerCase() for instances of a Capitalized vowel.
         return i;
       }
     }
